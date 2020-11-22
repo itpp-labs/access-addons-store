@@ -1,0 +1,52 @@
+name: "LINAR: update module html"
+# forced rebuild date: Nov 22
+
+on:
+  push:
+    paths:
+      - ".DINAR/build-date-private.txt"
+      - ".github/workflows/LINAR-generate-module-html.yml"
+      - "*/__manifest__.py"
+      - "*/doc/src/info.yaml"
+      - "*/doc/src/index.html"
+
+jobs:
+  module_html:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+        with:
+          path: REPO
+          # token is required to bypass pushing without checks/reviews
+          token: ${{ secrets.DINAR_TOKEN }}
+      - name: Checkout LINAR
+        uses: actions/checkout@v2
+        with:
+          path: LINAR
+          repository: itpp-labs/LINAR
+          ref: master
+          token: ${{ secrets.DINAR_TOKEN }}
+      - uses: actions/setup-python@v1
+        with:
+          python-version: "3.9.x"
+      - name: Install python tools
+        run: |
+          pip install plumbum pyyaml
+      - name: Generate html
+        run: |
+          cd REPO
+          for d in */ ; do
+              python ../LINAR/workflow-files/generate_module_html.py $d
+          done
+
+      - name: Commit updates
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          repository: REPO
+          commit_user_name: Mitchell Admin
+          commit_user_email: itpp-bot@users.noreply.github.com
+          commit_message: |
+            :angel: Update module html
+
+            Sent from Github Actions (see .github/workflows/LINAR-generate-module-html.yml )
