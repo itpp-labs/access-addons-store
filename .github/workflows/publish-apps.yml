@@ -1,0 +1,17 @@
+name: "Publish Apps"
+
+on:
+  push:
+    paths:
+      - "some-unexisting-file-to-disable-it"
+    #paths-ignore:
+    #  - ".github/**"
+    #  - ".DINAR/**"
+
+jobs:
+  publish-apps:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "[TODO] Publish"
+        run: |
+          echo "TODO"
