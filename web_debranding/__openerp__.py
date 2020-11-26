@@ -3,7 +3,7 @@
     'name': "Backend debranding",
     'version': '1.0.5',
     'author': 'IT-Projects LLC, Ivan Yelizariev',
-    'license': 'GPL-3',
+    'license': 'AGPL-3',
     'category': 'Debranding',
     'images': ['images/web_debranding'],
     'website': 'https://twitter.com/yelizariev',
