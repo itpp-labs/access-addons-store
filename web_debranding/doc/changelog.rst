@@ -1,3 +1,8 @@
+`1.0.32`
+--------
+
+- **Fix:** add missing dependency ``mail_bot``
+
 `1.0.31`
 --------
 
