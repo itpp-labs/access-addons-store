@@ -3,7 +3,7 @@
     'name': "Website debranding",
     'version': '1.0.0',
     'author': 'IT-Projects LLC, Ivan Yelizariev',
-    'license': 'GPL-3',
+    'license': 'AGPL-3',
     'category': 'Debranding',
     'website': 'https://twitter.com/yelizariev',
     # 'price': 60.00,
