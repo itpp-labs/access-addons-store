@@ -5,7 +5,7 @@
 # Copyright 2017 Ildar Nasyrov <https://it-projects.info/team/iledarn>
 # Copyright 2018 Kolushov Alexandr <https://it-projects.info/team/KolushovAlexandr>
 # License MIT (https://opensource.org/licenses/MIT).
-# License OPL-1 (https://www.odoo.com/documentation/user/13.0/legal/licenses/licenses.html#odoo-apps) for derivative work.
+# License OPL-1 (https://www.odoo.com/documentation/user/14.0/legal/licenses/licenses.html#odoo-apps) for derivative work.
 
 import base64
 import functools

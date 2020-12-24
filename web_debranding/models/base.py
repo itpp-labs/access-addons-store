@@ -1,5 +1,5 @@
 # Copyright 2020 Ivan Yelizariev
-# License OPL-1 (https://www.odoo.com/documentation/user/13.0/legal/licenses/licenses.html#odoo-apps).
+# License OPL-1 (https://www.odoo.com/documentation/user/14.0/legal/licenses/licenses.html#odoo-apps).
 from odoo import models
 
 from .ir_translation import debrand

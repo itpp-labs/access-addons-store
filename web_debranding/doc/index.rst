@@ -20,7 +20,7 @@ By default the module replaces ``Odoo`` to ``Software``.
   * ``web_debranding.new_website`` (your website)
   * ``web_debranding.new_documentation_website`` (website with documentation instead of official one)
   * ``web_debranding.favicon_url``
-  * ``web_debranding.send_publisher_warranty_url`` - set 0 to disable server requests to odoo.com and 1 otherwise (useful for enterprise contractors). Works only for non-enterprise versions of odoo, check `note <https://www.odoo.com/apps/modules/13.0/web_debranding/#enterprise-users-notice>`__ below.
+  * ``web_debranding.send_publisher_warranty_url`` - set 0 to disable server requests to odoo.com and 1 otherwise (useful for enterprise contractors). Works only for non-enterprise versions of odoo, check `note <https://www.odoo.com/apps/modules/14.0/web_debranding/#enterprise-users-notice>`__ below.
   * ``web_debranding.icon_url`` - icon for mobile devices *recommended size :192x192*
   * ``web_debranding.apple_touch_icon_url`` - icon for IOS Safari *recommended size :152x152*
 
@@ -28,12 +28,12 @@ Further debranding
 ==================
 
 * Open *addons/mail/data/mail_data.xml* and edit Template **Notification Email** - delete ``using Odoo``
-* Install `website_debranding <https://apps.odoo.com/apps/modules/13.0/website_debranding/>`__ if module *Website Builder* has been already installed in your system
-* Install `pos_debranding <https://apps.odoo.com/apps/modules/13.0/pos_debranding/>`__ if module `POS` has been already installed in your system
+* Install `website_debranding <https://apps.odoo.com/apps/modules/14.0/website_debranding/>`__ if module *Website Builder* has been already installed in your system
+* Install `pos_debranding <https://apps.odoo.com/apps/modules/14.0/pos_debranding/>`__ if module `POS` has been already installed in your system
 * Delete *Odoo.com Accounts* record at *Settings >> Users & Companies >> OAuth Providers* if module ``OAuth2 Authentication`` has been already installed in your system
 * To debrand ``/web/database/manager``:
 
-  * Either set [list_db](https://www.odoo.com/documentation/13.0/setup/deploy.html#database-manager-security) to value ``False``
+  * Either set [list_db](https://www.odoo.com/documentation/14.0/setup/deploy.html#database-manager-security) to value ``False``
 
   * or edit *addons/web/views/database_manager.html* file:
 
