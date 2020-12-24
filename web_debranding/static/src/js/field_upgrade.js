@@ -33,7 +33,12 @@ odoo.define("web_debranding.field_upgrade", function (require) {
 */
             if (this.state && this.state.model === "res.config.settings") {
                 // Hide enterprise labels with related fields
-                $result.find(".o_enterprise_label").parent().parent().parent().hide();
+                $result
+                    .find(".o_enterprise_label")
+                    .parent()
+                    .parent()
+                    .parent()
+                    .hide();
             }
             return $result;
         },

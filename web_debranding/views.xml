@@ -6,7 +6,7 @@
     Copyright 2017 auyeung112002 <https://github.com/auyeung112002>
     Copyright 2020 Denis Mudarisov <https://it-projects.info/team/trojikman>
     License MIT (https://opensource.org/licenses/MIT).
-    License OPL-1 (https://www.odoo.com/documentation/user/13.0/legal/licenses/licenses.html#odoo-apps) for derivative work.-->
+    License OPL-1 (https://www.odoo.com/documentation/user/14.0/legal/licenses/licenses.html#odoo-apps) for derivative work.-->
 <odoo>
     <template id="login_layout" inherit_id="web.login_layout" priority="8">
         <xpath expr="//div[@t-if='not disable_footer']" position="replace" />
@@ -34,7 +34,6 @@
         priority="99"
     >
         <xpath expr="//t[@t-raw]" position="replace">
-
         </xpath>
     </template>
 </odoo>
