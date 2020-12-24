@@ -7,8 +7,10 @@
 <templates>
     <t t-extend="mail.client_action">
         <t t-jquery=".o_mail_request_permission" t-operation="inner">
-        Your permission is required to <a href="#"> enable desktop notifications</a>.
-      </t>
+            Your permission is required to
+            <a href="#">enable desktop notifications</a>
+            .
+        </t>
     </t>
     <t t-extend="AppSwitcher.Content">
         <t t-jquery=".o_application_switcher_footer" t-operation="replace">
@@ -25,16 +27,14 @@
         <t t-jquery="div.dropdown-divider" t-operation="replace" />
     </t>
     <t t-extend="wysiwyg.widgets.image">
-        <t
-            t-jquery="t[t-set='urlPlaceholder']"
-            t-operation="inner"
-        >https://www.example.com/logo.png</t>
+        <t t-jquery="t[t-set='urlPlaceholder']" t-operation="inner">
+            https://www.example.com/logo.png
+        </t>
     </t>
     <t t-extend="wysiwyg.widgets.document">
-        <t
-            t-jquery="t[t-set='urlPlaceholder']"
-            t-operation="inner"
-        >https://www.example.com/mydocument</t>
+        <t t-jquery="t[t-set='urlPlaceholder']" t-operation="inner">
+            https://www.example.com/mydocument
+        </t>
     </t>
     <!-- enterprise: hide database expiration panel -->
     <!-- WARNING: running odoo instance with uncommented lines below may be illegal -->
