@@ -12,41 +12,35 @@
 
 Build and enhance brand by removing references to `odoo.com <https://www.odoo.com/>`__ and customizing company logo, favicon, page title, etc.
 
-List of debranding
-==================
-
-In previous versions this list was in `static/description/index.html`. 
-
-Beyond the presentation this service provides a wide range of options for debranding: 
-
-1. (feature is not required in 12.0+ versions)
-2. Replaces "Odoo" in page title
-3. Replaces "Odoo" in help message for empty list
-4. (feature is not required in 9.0+ versions)
+1. *(feature is not required in 12.0+ versions)*
+2. Replaces **Odoo** in page title
+3. Replaces **Odoo** in help message for empty list
+4. *(feature is not required in 9.0+ versions)*
 5. Deletes Documentation, Support, About links from the top right-hand User Menu.
-6. (feature is not required in 11.0+ versions)
-7. Replaces "Odoo" in Dialog Box
-8. Replaces "Odoo" in strings marked for translation
+6. *(feature is not required in 11.0+ versions)*
+7. Replaces **Odoo** in Dialog Box
+8. Replaces **Odoo** in strings marked for translation
 9. Replaces default favicon to a custom one
 10. Hides Apps menu (by default, only Super User can see Apps menu. You could change it via tick "Show Modules Menu" in user's access rights tab.
 11. Disables server requests to odoo.com (publisher_warranty_url) - optional. Works only for non-enterprise versions of odoo
-12. (feature is a part of p.5)
-13. (feature is not required in 13.0+ versions)
-14. (feature is not required in 12.0+ versions)
-15. (feature is not required in 12.0+ versions)
-16. (feature is not required in 12.0+ versions)
-17. [ENTERPRISE] Deletes odoo logo in application switcher
+12. *(feature is a part of p.5)*
+13. *(feature is not required in 13.0+ versions)*
+14. *(feature is not required in 12.0+ versions)*
+15. *(feature is not required in 12.0+ versions)*
+16. *(feature is not required in 12.0+ versions)*
+17. ``[ENTERPRISE]`` Deletes odoo logo in application switcher
 18. Hides Enterprise features in Settings
-19. Replaces "Odoo" in all backend qweb templates (e.g. FAQ in import tool)
-20. Replaces "odoo.com" in hints, examples, etc.
-21. Rename "OdooBot" to "Bot". Use company's logo as bot avatar
-22. [ENTERPRISE] Replaces icons for android and apple devices with custom url
+19. Replaces **Odoo** in all backend qweb templates (e.g. FAQ in import tool)
+20. Replaces **odoo.com** in hints, examples, etc.
+21. Renames **OdooBot** to *Bot*. Uses company's logo as bot avatar
+22. ``[ENTERPRISE]`` Replaces icons for android and apple devices with custom url
 23. Replaces links to `documentation <https://www.odoo.com/documentation>`__ (e.g. "Help" in Import tool, "How-to" in paypal, etc.) to custom website
-24. (feature is not required in 12.0+ versions)
-25. (feature is not required in 12.0+ versions)
+24. *(feature is not required in 12.0+ versions)*
+25. *(feature is not required in 12.0+ versions)*
 26. Deletes Google Play, Apps Store apps links
-27. Replaces "Powered by Odoo" in emails
-28. Deletes "Powered by Odoo" in Website (when installed)
+27. Replaces **Powered by Odoo** in emails
+28. Deletes **Powered by Odoo** in Website (when installed)
+
 
 Roadmap
 =======
@@ -67,7 +61,6 @@ Further information
 ===================
 
 Odoo Apps Store: https://www.odoo.com/apps/modules/14.0/web_debranding/
-
 
 Notifications on updates: `via Atom <https://github.com/itpp-labs/misc-addons/commits/14.0/web_debranding.atom>`_, `by Email <https://blogtrottr.com/?subscribe=https://github.com/itpp-labs/misc-addons/commits/14.0/web_debranding.atom>`_
 
