@@ -1,6 +1,7 @@
 /*  Copyright 2016-2017 Ivan Yelizariev <https://it-projects.info/team/yelizariev>
     Copyright 2020 Eugene Molotov <https://it-projects.info/team/em230418>
-    License MIT (https://opensource.org/licenses/MIT). */
+    License MIT (https://opensource.org/licenses/MIT). 
+    License OPL-1 (https://www.odoo.com/documentation/user/14.0/legal/licenses/licenses.html#odoo-apps) for derivative work. */
 odoo.define("web_debranding.bot", function (require) {
     "use strict";
 
