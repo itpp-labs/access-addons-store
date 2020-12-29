@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2020 Eugene Molotov <https://github.com/em230418>
+     License MIT (https://opensource.org/licenses/MIT).-->
 <templates xml:space="preserve">
     <t t-name="web_debranding.mail.Message" t-inherit="mail.Message" t-inherit-mode="extension" owl="1">
         <xpath expr="//img[@t-att-src='avatar']" position="attributes">
