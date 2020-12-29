@@ -2,7 +2,8 @@
     Copyright 2017 ArtyomLosev <https://github.com/ArtyomLosev>
     Copyright 2018-2019 Kolushov Alexandr <https://it-projects.info/team/KolushovAlexandr>
     Copyright 2018 Ildar Nasyrov <https://it-projects.info/team/iledarn>
-    License MIT (https://opensource.org/licenses/MIT). */
+    License MIT (https://opensource.org/licenses/MIT).
+    License OPL-1 (https://www.odoo.com/documentation/user/14.0/legal/licenses/licenses.html#odoo-apps) for derivative work. */
 odoo.define("web_debranding.field_upgrade", function (require) {
     "use strict";
 
