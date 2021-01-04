@@ -33,7 +33,7 @@ Further debranding
 * Delete *Odoo.com Accounts* record at *Settings >> Users & Companies >> OAuth Providers* if module ``OAuth2 Authentication`` has been already installed in your system
 * To debrand ``/web/database/manager``:
 
-  * Either set [list_db](https://www.odoo.com/documentation/14.0/setup/deploy.html#database-manager-security) to value ``False``
+  * Either set `list_db <https://www.odoo.com/documentation/14.0/setup/deploy.html#database-manager-security>`__ to value ``False``
 
   * or edit *addons/web/views/database_manager.html* file:
 
@@ -48,6 +48,11 @@ Further debranding
 
   * ``iap`` (*In-App Purchases*)
   * ``odoo_refferal`` (*Odoo referral program*)
+* Favicon
+
+  * in existing database, you may need to open ``[[ Settings ]] >> Users & Companies >> Companies`` and change **Company Favicon**
+  * for new companies odoo default favicon is empty
+  * to get debranded favicon in new datatabase check next section
 
 Auto-debrand new databases
 ==========================
@@ -63,6 +68,9 @@ To automatically install this module for every new databases set 'auto_install':
 * ``base_setup (built-in)``
 * ``bus (built-in)``
 
+Also, it's recommended to add ``web_debranding`` to `server wide modules <https://odoo-development.readthedocs.io/en/latest/admin/server_wide_modules.html>`__, e.g.::
+
+    ./odoo-bin --load=base,web,web_debranding
 Usage
 =====
 * Open *Backend*
