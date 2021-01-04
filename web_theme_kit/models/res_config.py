@@ -88,7 +88,6 @@ class Config(models.TransientModel):
         )
         return res
 
-    @api.multi
     def set_values(self):
         super(Config, self).set_values()
         ICPSudo = self.env["ir.config_parameter"].sudo()
