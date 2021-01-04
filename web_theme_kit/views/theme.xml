@@ -499,28 +499,24 @@
         <field name="name">Color Scheme</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">theme_kit.theme</field>
-        <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
     </record>
     <record id="theme_top_panel_action" model="ir.actions.act_window">
         <field name="name">Color Top Panel</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">theme_kit.top_panel</field>
-        <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
     </record>
     <record id="theme_left_panel_action" model="ir.actions.act_window">
         <field name="name">Color Left Panel</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">theme_kit.left_panel</field>
-        <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
     </record>
     <record id="theme_content_action" model="ir.actions.act_window">
         <field name="name">Color Content</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">theme_kit.content</field>
-        <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
     </record>
     <menuitem
