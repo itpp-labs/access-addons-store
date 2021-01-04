@@ -402,7 +402,9 @@ class ThemeLeftPanel(models.Model):
                 """
                 )
 
-            code = code.format(theme=r,)
+            code = code.format(
+                theme=r,
+            )
             self.less = code
 
 
