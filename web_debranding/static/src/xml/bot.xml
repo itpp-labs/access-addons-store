@@ -1,15 +1,27 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- Copyright 2020 Eugene Molotov <https://github.com/em230418>
      License OPL-1 (https://www.odoo.com/documentation/user/14.0/legal/licenses/licenses.html#odoo-apps) for derivative work.-->
 <templates xml:space="preserve">
-    <t t-name="web_debranding.mail.Message" t-inherit="mail.Message" t-inherit-mode="extension" owl="1">
+    <t
+        t-name="web_debranding.mail.Message"
+        t-inherit="mail.Message"
+        t-inherit-mode="extension"
+        owl="1"
+    >
         <xpath expr="//img[@t-att-src='avatar']" position="attributes">
             <attribute name="t-att-src">avatar_debranded()</attribute>
         </xpath>
     </t>
-
-    <t t-name="web_debranding.mail.NotificationRequest" t-inherit="mail.NotificationRequest" t-inherit-mode="extension" owl="1">
-        <xpath expr="//img[hasclass('o_NotificationRequest_image')]" position="attributes">
+    <t
+        t-name="web_debranding.mail.NotificationRequest"
+        t-inherit="mail.NotificationRequest"
+        t-inherit-mode="extension"
+        owl="1"
+    >
+        <xpath
+            expr="//img[hasclass('o_NotificationRequest_image')]"
+            position="attributes"
+        >
             <attribute name="src">/web/binary/company_logo?company_id=1</attribute>
             <attribute name="alt">Avatar of Bot</attribute>
         </xpath>

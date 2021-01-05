@@ -1,1 +1,4 @@
-slogan: Build and enhance your Brand by removing references to <a href="https://www.odoo.com/"> odoo.com </a> and customizing company logo, favicon, page title, etc.
+slogan:
+  Build and enhance your Brand by removing references to <a
+  href="https://www.odoo.com/"> odoo.com </a> and customizing company logo, favicon,
+  page title, etc.
