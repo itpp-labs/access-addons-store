@@ -40,6 +40,7 @@ Build and enhance brand by removing references to `odoo.com <https://www.odoo.co
 26. Deletes Google Play, Apps Store apps links
 27. Replaces **Powered by Odoo** in emails
 28. Deletes **Powered by Odoo** in Website (when installed)
+29. Hides iap links in Settings
 
 
 Roadmap
