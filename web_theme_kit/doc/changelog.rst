@@ -1,7 +1,7 @@
 `1.1.3`
 -------
 
-- **Fix:**  remove unnecessary text in the interface
+- **Fix:**  remove unnecessary text in the css
 
 `1.1.2`
 -------
