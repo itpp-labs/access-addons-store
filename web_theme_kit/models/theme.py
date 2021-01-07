@@ -58,7 +58,7 @@ class Theme(models.Model):
             r.code = code
 
     def generate_less2css(self, code):
-        bundle = AssetsBundle("theme_kit.dummy", [], [])
+        bundle = AssetsBundle("theme_kit.dummy", [], None)
         assets = LessStylesheetAsset(bundle, inline=code, url="")
         source = assets.get_source()
         compiled = bundle.compile_css(assets.compile, source)
