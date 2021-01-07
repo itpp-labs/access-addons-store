@@ -9,9 +9,7 @@
         <field name="priority" eval="99" />
         <field name="arch" type="xml">
             <!-- delete android/iOS apps links -->
-            <xpath expr="//div[@id='about']" position="replace">
-
-            </xpath>
+            <xpath expr="//div[@id='about']" position="replace" />
         </field>
     </record>
 </odoo>

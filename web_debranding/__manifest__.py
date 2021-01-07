@@ -1,4 +1,4 @@
-# Copyright 2015-2020 Ivan Yelizariev <https://it-projects.info/team/yelizariev>
+# Copyright 2015-2021 Ivan Yelizariev <https://it-projects.info/team/yelizariev>
 # Copyright 2017 Ilmir Karamov <https://it-projects.info/team/ilmir-k>
 # Copyright 2018-2019 Kolushov Alexandr <https://it-projects.info/team/KolushovAlexandr>
 # Copyright 2018 Ildar Nasyrov <https://it-projects.info/team/iledarn>
@@ -9,7 +9,7 @@
 # License OPL-1 (https://www.odoo.com/documentation/user/14.0/legal/licenses/licenses.html#odoo-apps) for derivative work.
 {
     "name": "Backend debranding",
-    "version": "14.0.1.0.32",
+    "version": "14.0.1.1.0",
     "author": "IT-Projects LLC, Ivan Yelizariev",
     "license": "OPL-1",
     "category": "Debranding",
@@ -18,7 +18,15 @@
     "support": "apps@itpp.dev",
     "price": 300.00,
     "currency": "EUR",
-    "depends": ["base_setup", "web", "mail", "access_settings_menu", "mail_bot"],
+    "depends": [
+        "base_setup",
+        "web",
+        "mail",
+        "access_settings_menu",
+        "mail_bot",
+        "base",
+    ],
+    "external_dependencies": {"python": ["lxml"]},
     "data": [
         "data.xml",
         "views.xml",
