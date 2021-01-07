@@ -1,3 +1,9 @@
+`1.1.0`
+--------
+
+- **New:** delete iap links in Settings
+- **Fix:** hide Enterprise checkboxes in Settings
+
 `1.0.32`
 --------
 
