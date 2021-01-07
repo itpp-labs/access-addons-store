@@ -44,10 +44,6 @@ Further debranding
     * delete or modify **<small class="text-muted">** To enhance your experience, some data may be sent to *Odoo online services*. See our `Privacy Policy <https://www.odoo.com/privacy>`__
     * delete or modify **<p class="form-text"> In order to avoid conflicts between databases, Odoo needs ...</p>**
 
-* Delete following modules and remove ``'auto_install': True,`` attribute from their ``__manifest__.py`` files:
-
-  * ``iap`` (*In-App Purchases*)
-  * ``odoo_refferal`` (*Odoo referral program*)
 * Favicon
 
   * in existing database, you may need to open ``[[ Settings ]] >> Users & Companies >> Companies`` and change **Company Favicon**
