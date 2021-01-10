@@ -10,7 +10,7 @@ Installation
 Configuration
 =============
 
-* `Activate Developer Mode <https://odoo-development.readthedocs.io/en/latest/odoo/usage/debug-mode.html>`__
+* `Log in as a superuser <https://odoo-development.readthedocs.io/en/latest/odoo/usage/login-as-superuser.html>`__
 * Open menu ``Settings / Brand Kit / Brand``
 * Choose **Color Scheme** or create new one. To return default color scheme set empty value
 * **Favicon**: type some name (e.g. *favicon*) and click *Create and Edit*

@@ -9,9 +9,9 @@
     "version": "14.0.1.1.3",
     "application": False,
     "author": "IT-Projects LLC, Ivan Yelizariev",
-    "website": "https://it-projects.info",
+    "website": "https://odoo-debranding.com/",
     "license": "Other OSI approved licence",  # MIT
-    "price": 50.00,
+    "price": 90.00,
     "currency": "EUR",
     "depends": ["web_debranding", "web_login_background"],
     "external_dependencies": {"python": [], "bin": []},
