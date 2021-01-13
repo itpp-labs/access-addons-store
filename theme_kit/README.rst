@@ -28,7 +28,7 @@ Contributors
 Further information
 ===================
 
-Odoo Apps Store: https://apps.odoo.com/apps/modules/9.0/theme_kit/
+Odoo Apps Store: https://apps.odoo.com/apps/modules/10.0/theme_kit/
 
 
-Tested on `Odoo 9.0 <https://github.com/odoo/odoo/commit/c902437247d36ca7945d30b8d75b55f4f7c4855e>`_
+Tested on `Odoo 10.0 <https://github.com/odoo/odoo/commit/8add992633388d61ff3abcd42e4565c72a6961e9>`_
