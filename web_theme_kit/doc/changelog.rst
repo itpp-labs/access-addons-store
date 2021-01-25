@@ -1,3 +1,9 @@
+`1.1.4`
+-------
+
+- **Fix:**  background in Settings
+
+
 `1.1.3`
 -------
 

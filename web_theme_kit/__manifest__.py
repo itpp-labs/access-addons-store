@@ -6,7 +6,7 @@
     "summary": """Brand your odoo instance in few clicks""",
     "category": "Debranding",
     "images": ["images/brandkit.png"],
-    "version": "13.0.1.1.3",
+    "version": "13.0.1.1.4",
     "application": False,
     "author": "IT-Projects LLC, Ivan Yelizariev",
     "website": "https://it-projects.info",

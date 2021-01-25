@@ -5,6 +5,10 @@
 Installation
 ============
 
+* install `lessc <http://lesscss.org/usage/#command-line-usage-installing>`__, e.g.
+
+    npm install less -g
+
 * `Install <https://odoo-development.readthedocs.io/en/latest/odoo/usage/install-module.html>`__ this module in a usual way
 
 Configuration

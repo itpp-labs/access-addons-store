@@ -1,8 +1,8 @@
-# Copyright 2016 Ivan Yelizariev <https://it-projects.info/team/yelizariev>
+# Copyright 2016,2021 Ivan Yelizariev <https://it-projects.info/team/yelizariev>
 # Copyright 2016,2018 Dinar Gabbasov <https://it-projects.info/team/GabbasovDinar>
 # License MIT (https://opensource.org/licenses/MIT).
 
-from odoo import api, fields, models
+from odoo import fields, models
 
 from odoo.addons.base.models.assetsbundle import AssetsBundle, LessStylesheetAsset
 
@@ -486,6 +486,7 @@ class ThemeContent(models.Model):
                     + """
                 .breadcrumb,
                 .o_control_panel,
+                .o_form_statusbar,
                 .o_statusbar_buttons,
                 .o_content {{
                     background-color: {theme.content_bg}!important;
