@@ -7,7 +7,7 @@
     "author": "IT-Projects LLC, Ivan Yelizariev",
     "license": "OPL-1",
     "category": "Debranding",
-    "images": ["images/website_debranding.jpg"],
+    "images": ["images/portal_debranding.jpg"],
     "support": "apps@itpp.dev",
     "website": "https://odoo-debranding.com/",
     "depends": ["portal", "web_debranding"],
