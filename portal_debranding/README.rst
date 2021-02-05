@@ -12,9 +12,6 @@ Removes references to odoo.com:
 Further information
 ===================
 
-Odoo Apps Store: https://www.odoo.com/apps/modules/12.0/portal_debranding/
+Odoo Apps Store: https://www.odoo.com/apps/modules/13.0/portal_debranding/
 
-
-Notifications on updates: `via Atom <https://github.com/itpp-labs/misc-addons/commits/12.0/portal_debranding.atom>`_, `by Email <https://blogtrottr.com/?subscribe=https://github.com/itpp-labs/misc-addons/commits/12.0/portal_debranding.atom>`_
-
-Tested on `Odoo 12.0 <https://github.com/odoo/odoo/commit/2fb44a86819fc6a7a6507d120c79639e2e9f8a6b>`_
+Tested on `Odoo 13.0 <https://github.com/odoo/odoo/commit/1c04ab0f84de805dc6e97c4810f5034ca153a98a>`_
