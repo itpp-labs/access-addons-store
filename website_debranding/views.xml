@@ -3,7 +3,7 @@
      Copyright 2021 Denis Mudarisov <https://github.com/trojikman>
      License OPL-1 (https://www.odoo.com/documentation/user/13.0/legal/licenses/licenses.html#odoo-apps) for derivative work.-->
 <odoo>
-    <record id="website.website_info" model="ir.ui.view">
+    <record id="website.show_website_info" model="ir.ui.view">
         <field name="active" eval="False" />
     </record>
 </odoo>
