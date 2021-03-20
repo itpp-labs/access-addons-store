@@ -10,6 +10,6 @@ Removes references to odoo.com:
 Further information
 ===================
 
-Odoo Apps Store: https://www.odoo.com/apps/modules/13.0/website_debranding/
+Odoo Apps Store: https://www.odoo.com/apps/modules/14.0/website_debranding/
 
-Tested on `Odoo 13.0 <https://github.com/odoo/odoo/commit/1c04ab0f84de805dc6e97c4810f5034ca153a98a>`_
+Tested on `Odoo 14.0 <https://github.com/odoo/odoo/commit/4779ff2369f1f632429f5305bc4a84db730c3dfe>`_
