@@ -1,10 +1,23 @@
-/* Copyright 2015-2018 Ivan Yelizariev <https://it-projects.info/team/yelizariev>
+/* Copyright 2015-2018,2021 Ivan Yelizariev <https://twitter.com/yelizariev>
    Copyright 2015 igallyamov <https://github.com/igallyamov>
    Copyright 2017 Gabbasov Dinar <https://it-projects.info/team/GabbasovDinar>
    License MIT (https://opensource.org/licenses/MIT).*/
 odoo.define("web_debranding.dialog", function (require) {
     "use strict";
     require("web_debranding.base");
+    var CrashManager = require("web.CrashManager");
+
+    function crash_init(parent, options, error) {
+        var debranding_new_name = odoo.debranding_new_name;
+        error.message = error.message.replace(/Odoo/gi, debranding_new_name);
+        this._super.apply(this, [parent, options, error]);
+    }
+    CrashManager.ErrorDialog.include({
+        init: crash_init,
+    });
+    CrashManager.WarningDialog.include({
+        init: crash_init,
+    });
 
     var Dialog = require("web.Dialog");
     Dialog.include({
