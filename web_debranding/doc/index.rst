@@ -112,3 +112,7 @@ Examples
     You can execute a command by typing /command.
 
     You can insert canned responses in your message by typing :shortcut.
+
+* Open two browser tabs with Odoo. Then logout in one of it. Open any menu in another one.
+
+    Your **Odoo** session expired. The current page is about to be refreshed.
