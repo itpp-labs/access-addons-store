@@ -1,3 +1,8 @@
+`1.1.1`
+--------
+
+- **Fix:** Debrand "session expired" popup
+
 `1.1.0`
 --------
 
