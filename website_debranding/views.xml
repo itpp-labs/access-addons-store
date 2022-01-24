@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp><data>
+
+<template id="layout_footer_copyright" inherit_id="website.layout_footer_copyright">
+    <xpath expr="//div[@t-ignore='true']" position="replace">
+    </xpath>
+</template>
+
+<record id="view_website_config_settings" model="ir.ui.view">
+    <field name="model">website.config.settings</field>
+    <field name="inherit_id" ref="website.view_website_config_settings"/>
+    <field name="arch" type="xml">
+        <xpath expr="//field[@name='social_twitter']" position="attributes">
+            <attribute name="placeholder"></attribute>
+        </xpath>
+        <xpath expr="//field[@name='social_facebook']" position="attributes">
+            <attribute name="placeholder"></attribute>
+        </xpath>
+        <xpath expr="//field[@name='social_github']" position="attributes">
+            <attribute name="placeholder"></attribute>
+        </xpath>
+        <xpath expr="//field[@name='social_linkedin']" position="attributes">
+            <attribute name="placeholder"></attribute>
+        </xpath>
+        <xpath expr="//field[@name='social_youtube']" position="attributes">
+            <attribute name="placeholder"></attribute>
+        </xpath>
+        <xpath expr="//field[@name='social_googleplus']" position="attributes">
+            <attribute name="placeholder"></attribute>
+        </xpath>
+    </field>
+</record>
+
+<record id="view_website_form" model="ir.ui.view">
+    <field name="model">website</field>
+    <field name="inherit_id" ref="website.view_website_form"/>
+    <field name="arch" type="xml">
+        <xpath expr="//field[@name='social_twitter']" position="attributes">
+            <attribute name="placeholder"></attribute>
+        </xpath>
+        <xpath expr="//field[@name='social_facebook']" position="attributes">
+            <attribute name="placeholder"></attribute>
+        </xpath>
+        <xpath expr="//field[@name='social_github']" position="attributes">
+            <attribute name="placeholder"></attribute>
+        </xpath>
+        <xpath expr="//field[@name='social_linkedin']" position="attributes">
+            <attribute name="placeholder"></attribute>
+        </xpath>
+        <xpath expr="//field[@name='social_youtube']" position="attributes">
+            <attribute name="placeholder"></attribute>
+        </xpath>
+        <xpath expr="//field[@name='social_googleplus']" position="attributes">
+            <attribute name="placeholder"></attribute>
+        </xpath>
+    </field>
+</record>
+
+<template id="snippets" inherit_id="website.snippets">
+    <xpath expr="//div[@class='o_block_image_float']//div[@class='container']/div[@class='row']/div" position="replace">
+
+
+        <div class="o_image_floating o_margin_l pull-right">
+            <div class="o_container">
+                <img class="img img-rounded img-responsive" src="/website/static/src/img/library/ipad.png" alt="CMS- Sample image floating"/>
+                <mark class="text-center"><a href="#"><strong>Click Here</strong></a></mark>
+            </div>
+            <div class="o_footer">
+                <small class="text-muted">A great way to catch your reader's attention is to tell a story. Everything you consider writing can be told as a story.</small>
+            </div>
+        </div>
+
+        <p style="text-align: justify;">
+            A great way to catch your reader's attention is to tell a story. <br/>Everything you consider writing can be told as a story.
+        </p>
+        <h3>Great stories have personality.</h3>
+        <p style="text-align: justify;">
+Consider telling a great story that provides personality. Writing a story with personality for potential clients will asist with making a relationship connection. This shows up in small quirks like word choices or phrases. Write from your point of view, not from someone else's experience.
+        </p>
+
+        <h3>Great stories are for everyone even when only written for just one person.</h3>
+        <p style="text-align: justify;">
+If you try to write with a wide general audience in mind, your story will ring false and be bland. No one will be interested. Write for one person. If it’s genuine for the one, it’s genuine for the rest.
+        </p>
+
+
+    </xpath>
+</template>
+
+<delete id="website.show_website_info" model="ir.ui.view"/>
+<delete id="website.info" model="ir.ui.view"/>
+
+</data></openerp>
