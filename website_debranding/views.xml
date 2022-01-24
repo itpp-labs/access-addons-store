@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2015-2018,2020-2021 Ivan Yelizariev
+     License OPL-1 (https://www.odoo.com/documentation/user/12.0/legal/licenses/licenses.html#odoo-apps) for derivative work.-->
+<odoo>
+    <template id="brand_promotion" inherit_id="website.brand_promotion">
+        <xpath expr="//div" position="replace" />
+    </template>
+    <record id="website.website_info" model="ir.ui.view">
+        <field name="active" eval="False" />
+    </record>
+</odoo>
