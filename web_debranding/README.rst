@@ -2,10 +2,6 @@
    :alt: Tested and maintained by IT Projects Labs
    :target: https://itpp.dev
 
-.. image:: https://img.shields.io/badge/license-MIT-blue.svg
-   :target: https://opensource.org/licenses/MIT
-   :alt: License: MIT
-
 ====================
  Backend debranding
 ====================
@@ -21,7 +17,7 @@ Build and enhance brand by removing references to `odoo.com <https://www.odoo.co
 7. Replaces **Odoo** in Dialog Box
 8. Replaces **Odoo** in strings marked for translation
 9. Replaces default favicon to a custom one
-10. Hides Apps menu (by default, only Super User can see Apps menu. You could change it via tick "Show Modules Menu" in user's access rights tab.
+10. *Hides Apps menu* (related `access_apps` module is excluded from dependencies since Odoo v15.0 and must be installed explicitly)
 11. Disables server requests to odoo.com (publisher_warranty_url) - optional. Works only for non-enterprise versions of odoo
 12. *(feature is a part of p.5)*
 13. *(feature is not required in 13.0+ versions)*
@@ -61,8 +57,8 @@ Contributors
 Further information
 ===================
 
-Odoo Apps Store: https://www.odoo.com/apps/modules/14.0/web_debranding/
+Odoo Apps Store: https://www.odoo.com/apps/modules/15.0/web_debranding/
 
 Notifications on updates: `via Atom <https://github.com/itpp-labs/misc-addons/commits/14.0/web_debranding.atom>`_, `by Email <https://blogtrottr.com/?subscribe=https://github.com/itpp-labs/misc-addons/commits/14.0/web_debranding.atom>`_
 
-Tested on `Odoo 14.0 <https://github.com/odoo/odoo/commit/05c373a99a6064f08fc9eb0662ab2ccdb1978cd7>`_
+Tested on `Odoo 15.0 <https://github.com/odoo/odoo/commit/8dbc14f16bfb92cedbb69df491f53ea72b860275>`_

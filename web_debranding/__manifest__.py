@@ -1,4 +1,4 @@
-# Copyright 2015-2021 Ivan Yelizariev <https://it-projects.info/team/yelizariev>
+# Copyright 2015-2022 Ivan Yelizariev <https://twitter.com/yelizariev>
 # Copyright 2017 Ilmir Karamov <https://it-projects.info/team/ilmir-k>
 # Copyright 2018-2019 Kolushov Alexandr <https://it-projects.info/team/KolushovAlexandr>
 # Copyright 2018 Ildar Nasyrov <https://it-projects.info/team/iledarn>
@@ -30,7 +30,6 @@
     "data": [
         "data.xml",
         "views.xml",
-        "js.xml",
         "pre_install.xml",
         "views/res_config.xml",
     ],
@@ -38,6 +37,16 @@
         "static/src/xml/bot.xml",
         "static/src/xml/web.xml",
     ],
+    "assets": {
+        "web.assets_backend": [
+            "/web_debranding/static/src/css/web.css",
+            "/web_debranding/static/src/js/base.js",
+            "/web_debranding/static/src/js/dialog.js",
+            "/web_debranding/static/src/js/field_upgrade.js",
+            "/web_debranding/static/src/js/native_notifications.js",
+            "/web_debranding/static/src/js/bot.js"
+        ]
+    },
     "post_load": "post_load",
     "auto_install": False,
     "uninstall_hook": "uninstall_hook",
