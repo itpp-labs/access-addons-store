@@ -1,37 +1,46 @@
+/** @odoo-module **/
 /*  Copyright 2016-2017 Ivan Yelizariev <https://it-projects.info/team/yelizariev>
     Copyright 2017 ArtyomLosev <https://github.com/ArtyomLosev>
-    License MIT (https://opensource.org/licenses/MIT). */
-odoo.define("web_debranding.native_notifications", function (require) {
-    "use strict";
+    Copyright 2022 IT-Projects <https://it-projects.info/>
+    License OPL-1 (https://www.odoo.com/documentation/user/14.0/legal/licenses/licenses.html#odoo-apps). */
 
-    require("web_debranding.base");
-    var session = require("web.session");
-    var BusService = require("bus.BusService");
-    var core = require("web.core");
-    var _t = core._t;
+import "@web_debranding/js/base";
+import { _t } from "web.core";
+import { patch } from "web.utils";
+import { session } from "@web/session";
 
-    BusService.include({
-        sendNotification: function (title, content, callback) {
+const web_session = session;
+const components = {
+    BusService: require("bus.BusService"),
+};
+
+patch(
+    components.BusService.prototype,
+    "web_debranding/static/src/js/native_notifications.js",
+    {
+        sendNotification(options, callback) {
             if (
-                title === _t("Yay, push notifications are enabled!") ||
-                title === _t("Permission denied")
+                options.title === _t("Yay, push notifications are enabled!") ||
+                options.title === _t("Permission denied")
             ) {
-                content = content.replace(/Odoo/gi, odoo.debranding_new_name);
+                options.message = options.message.replace(
+                    /Odoo/gi,
+                    odoo.debranding_new_name
+                );
             }
-
-            if (window.Notification && Notification.permission === "granted") {
-                if (this.isMasterTab()) {
-                    this._sendNativeNotification(title, content, callback);
-                }
-            } else {
-                this._super(title, content, callback);
-            }
+            this._super(options, callback);
         },
         _sendNativeNotification: function (title, content, callback) {
-            var notification = new Notification(title, {
-                body: content,
-                icon: "/web/binary/company_logo?company_id=" + session.company_id,
-            });
+            var notification = new Notification(
+                // The native Notification API works with plain text and not HTML
+                // unescaping is safe because done only at the **last** step
+                _.unescape(title),
+                {
+                    body: _.unescape(content),
+                    icon:
+                        "/web/binary/company_logo?company_id=" + web_session.company_id,
+                }
+            );
             notification.onclick = function () {
                 window.focus();
                 if (this.cancel) {
@@ -40,12 +49,9 @@ odoo.define("web_debranding.native_notifications", function (require) {
                     this.close();
                 }
                 if (callback) {
-                    // eslint-disable-next-line
-                    callback();
+                    return callback();
                 }
             };
         },
-    });
-
-    return BusService;
-});
+    }
+);
