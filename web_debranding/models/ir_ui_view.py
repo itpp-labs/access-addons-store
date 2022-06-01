@@ -1,6 +1,7 @@
 # Copyright 2016-2018 Ivan Yelizariev <https://it-projects.info/team/yelizariev>
 # Copyright 2017 ArtyomLosev <https://github.com/ArtyomLosev>
 # Copyright 2017 Ilmir Karamov <https://it-projects.info/team/ilmir-k>
+# Copyright 2022 IT-Projects <https://it-projects.info/>
 # License MIT (https://opensource.org/licenses/MIT).
 
 import logging
@@ -18,9 +19,9 @@ MODULE = "_web_debranding"
 class View(models.Model):
     _inherit = "ir.ui.view"
 
-    def read_combined(self, fields=None):
-        res = super(View, self).read_combined(fields=fields)
-        res["arch"] = debrand(self.env, res["arch"], is_code=True)
+    def get_combined_arch(self):
+        res = super(View, self).get_combined_arch()
+        res = debrand(self.env, res, is_code=True)
         return res
 
     @api.model
