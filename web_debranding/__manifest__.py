@@ -32,11 +32,11 @@
         "pre_install.xml",
         "views/res_config.xml",
     ],
-    "qweb": [
-        "static/src/xml/bot.xml",
-        "static/src/xml/web.xml",
-    ],
     "assets": {
+        "web.assets_qweb": [
+            "web_debranding/static/src/xml/bot.xml",
+            "web_debranding/static/src/xml/web.xml",
+        ],
         "web.assets_backend": [
             "web_debranding/static/src/css/web.css",
             "web_debranding/static/src/js/base.js",
