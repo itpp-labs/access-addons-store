@@ -22,7 +22,6 @@
         "base_setup",
         "web",
         "mail",
-        "access_settings_menu",
         "mail_bot",
         "base",
     ],
@@ -39,13 +38,14 @@
     ],
     "assets": {
         "web.assets_backend": [
-            "/web_debranding/static/src/css/web.css",
-            "/web_debranding/static/src/js/base.js",
-            "/web_debranding/static/src/js/dialog.js",
-            "/web_debranding/static/src/js/field_upgrade.js",
-            "/web_debranding/static/src/js/native_notifications.js",
-            "/web_debranding/static/src/js/bot.js"
-        ]
+            "web_debranding/static/src/css/web.css",
+            "web_debranding/static/src/js/base.js",
+            "web_debranding/static/src/js/dialog.js",
+            "web_debranding/static/src/js/field_upgrade.js",
+            "web_debranding/static/src/js/native_notifications.js",
+            "web_debranding/static/src/js/bot.js",
+            "web_debranding/static/src/js/user_menu_items.js",
+        ],
     },
     "post_load": "post_load",
     "auto_install": False,
