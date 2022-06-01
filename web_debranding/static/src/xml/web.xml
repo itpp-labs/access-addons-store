@@ -6,13 +6,6 @@
     License MIT (https://opensource.org/licenses/MIT).
     License OPL-1 (https://www.odoo.com/documentation/user/14.0/legal/licenses/licenses.html#odoo-apps) for derivative work. -->
 <templates>
-    <t t-extend="UserMenu.Actions">
-        <t t-jquery="a[data-menu='documentation']" t-operation="replace" />
-        <t t-jquery="a[data-menu='support']" t-operation="replace" />
-        <t t-jquery="a[data-menu='account']" t-operation="replace" />
-        <!-- It leads to warning in Odoo EE in browser console, because such selector doesn't exist there -->
-        <t t-jquery="div.dropdown-divider" t-operation="replace" />
-    </t>
     <t t-extend="wysiwyg.widgets.image">
         <t t-jquery="t[t-set='urlPlaceholder']" t-operation="inner">
             https://www.example.com/logo.png
