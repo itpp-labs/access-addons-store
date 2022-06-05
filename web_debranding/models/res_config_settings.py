@@ -1,4 +1,4 @@
-# Copyright 2021 Ivan Yelizariev <https://it-projects.info/team/yelizariev>
+# Copyright 2021-2022 Ivan Yelizariev <https://it-projects.info/team/yelizariev>
 # License OPL-1 (https://www.odoo.com/documentation/user/14.0/legal/licenses/licenses.html#odoo-apps) for derivative work.
 
 from lxml import etree
@@ -36,6 +36,8 @@ class ResConfigSettings(models.TransientModel):
             "//div[@id='crm_iap_lead_settings']",
             "//div[@id='crm_iap_lead_website_settings']",
             "//div[@id='crm_iap_lead_enrich']",
+            "//div[@id='crm_iap_mine_settings']",
+            "//div[@id='crm_iap_enrich_settings']",
         ]
         for query in crm_redirect_queries:
             for item in doc.xpath(query):
