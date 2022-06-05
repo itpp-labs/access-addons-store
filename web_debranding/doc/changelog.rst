@@ -1,3 +1,10 @@
+`2.0.0`
+--------
+
+- **Improvement:** make some features optional: access to Settings and Apps menus, restricted administration rights.
+- **Improvement:** `web_debranding.new_documentation_website` is now full link to the documentation, i.e. `/documentation/` path is not mandatory anymore. Also, use official docs by default
+- **Improvement:** bot's avatar is not changed on module installation and can be customized manually via Users menu
+
 `1.1.1`
 --------
 

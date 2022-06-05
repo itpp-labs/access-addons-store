@@ -1,4 +1,4 @@
-# Copyright 2015-2018 Ivan Yelizariev <https://it-projects.info/team/yelizariev>
+# Copyright 2015-2018,2022 Ivan Yelizariev <https://it-projects.info/team/yelizariev>
 # Copyright 2016 Stanislav Krotov <https://it-projects.info/team/ufaks>
 # Copyright 2017 ArtyomLosev <https://github.com/ArtyomLosev>
 # Copyright 2017 Ilmir Karamov <https://it-projects.info/team/ilmir-k>
@@ -13,7 +13,7 @@ PARAMS = [
     ("web_debranding.new_name", _("Software")),
     ("web_debranding.new_title", _("Software")),
     ("web_debranding.new_website", "example.com"),
-    ("web_debranding.new_documentation_website", ""),
+    ("web_debranding.new_documentation_website", "https://www.odoo.COM/documentation/"),
     ("web_debranding.favicon_url", ""),
     ("web_debranding.send_publisher_warranty_url", "0"),
     ("web_debranding.icon_url", ""),
