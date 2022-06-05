@@ -26,7 +26,7 @@ Further debranding
 ==================
 
 * Install `portal_debranding <https://apps.odoo.com/apps/modules/15.0/portal_debranding/>`__ if module *Portal* is already installed in your system
-* Install `website_debranding <https://apps.odoo.com/apps/modules/15.0/website_debranding/>`__ if module *Website Builder* is already installed in your system
+.. * Install `website_debranding <https://apps.odoo.com/apps/modules/15.0/website_debranding/>`__ if module *Website Builder* is already installed in your system
 * Install `pos_debranding <https://apps.odoo.com/apps/modules/15.0/pos_debranding/>`__ if module *POS* is already installed in your system
 * Delete *Odoo.com Accounts* record at *Settings >> Users & Companies >> OAuth Providers* if module ``OAuth2 Authentication`` has been already installed in your system
 * Database switcher ``/web/database/manager``: edit *addons/web/static/src/public/database_manager.qweb.html* file
