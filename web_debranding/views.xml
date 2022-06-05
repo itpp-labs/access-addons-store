@@ -29,11 +29,11 @@
         </xpath>
     </template>
     <template
-        id="brand_promotion"
-        inherit_id="web.brand_promotion"
+        id="brand_promotion_message"
+        inherit_id="web.brand_promotion_message"
         priority="99"
     >
-        <xpath expr="//div[hasclass('o_brand_promotion')]" position="replace">
+        <xpath expr="//t[@t-out]" position="replace">
 
         </xpath>
     </template>

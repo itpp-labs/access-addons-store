@@ -1,13 +1,10 @@
-# Copyright 2020 Ivan Yelizariev
+# Copyright 2020,2022 Ivan Yelizariev
 # License OPL-1 (https://www.odoo.com/documentation/user/14.0/legal/licenses/licenses.html#odoo-apps).
 from odoo import api, models
 
 from .ir_translation import debrand
 
-BRANDED_FIELDS = {
-    "mail.template": ["body_html", "name"],
-    "mailing.mailing": ["body_html"],
-}
+BRANDED_FIELDS = {}
 
 
 class Base(models.AbstractModel):

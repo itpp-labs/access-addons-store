@@ -1,4 +1,4 @@
-# Copyright 2015-2018,2020 Ivan Yelizariev <https://it-projects.info/team/yelizariev>
+# Copyright 2015-2018,2020,2022 Ivan Yelizariev <https://it-projects.info/team/yelizariev>
 # Copyright 2016 Stanislav Krotov <https://it-projects.info/team/ufaks>
 # Copyright 2017 Ilmir Karamov <https://it-projects.info/team/ilmir-k>
 # Copyright 2017 Nicolas JEUDY <https://github.com/njeudy>
@@ -22,14 +22,14 @@ from .ir_config_parameter import get_debranding_parameters_env
 def debrand_documentation_links(source, new_documentation_website):
     return re.sub(
         r"https://www.odoo.com/documentation/",
-        new_documentation_website + "documentation/",
+        new_documentation_website,
         source,
         flags=re.IGNORECASE,
     )
 
 
 def debrand_links(source, new_website):
-    return re.sub(r"\bodoo.com\b", new_website, source, flags=re.IGNORECASE)
+    return re.sub(r"\bodoo.com\b", new_website, source)
 
 
 def debrand(env, source, is_code=False):
