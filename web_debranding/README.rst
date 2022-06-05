@@ -29,7 +29,7 @@ Build and enhance brand by removing references to `odoo.com <https://www.odoo.co
 19. Replaces **Odoo** in all backend qweb templates
 20. Replaces **odoo.com** in hints, examples, etc.
 21. Renames **OdooBot** to *Bot*. (Bot's avatar is not changed since Odoo v15, because one can change it manually via Bot User)
-22. ``[ENTERPRISE]`` Replaces icons for android and apple devices with custom url
+22. *(feature is not required in 15.0+ versions)*
 23. Replaces links to `documentation <https://www.odoo.com/documentation>`__ (e.g. "Help" in Import tool, "How-to" in paypal, etc.) to custom website
 24. *(feature is not required in 12.0+ versions)*
 25. *(feature is not required in 12.0+ versions)*
