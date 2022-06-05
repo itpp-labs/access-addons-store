@@ -27,43 +27,7 @@ class View(models.Model):
     @api.model
     def _create_debranding_views(self):
         """Create UI views that may work only in one Odoo edition"""
-
-        # Odoo EE
-        self._create_view(
-            "webclient_bootstrap_enterprise_mobile_icon",
-            "web_enterprise.webclient_bootstrap",
-            """
-        <xpath expr="//link[@rel='icon']" position="replace">
-            <t t-set="icon" t-value="request and request.env['ir.config_parameter'].get_debranding_parameters().get('web_debranding.icon_url', '')"/>
-            <t t-if="icon">
-                <link rel="icon" sizes="192x192" t-att-href="icon" type="image/x-icon"/>
-            </t>
-        </xpath>""",
-        )
-
-        # Odoo EE
-        self._create_view(
-            "webclient_bootstrap_enterprise_apple_touch_icon",
-            "web_enterprise.webclient_bootstrap",
-            """
-        <xpath expr="//link[@rel='apple-touch-icon']" position="replace">
-            <t t-if="icon">
-                <link rel="apple-touch-icon" t-att-href="icon" type="image/x-icon"/>
-            </t>
-        </xpath>""",
-        )
-
-        # Odoo EE
-        self._create_view(
-            "webclient_bootstrap_enterprise_windows_phone",
-            "web_enterprise.webclient_bootstrap",
-            """
-        <xpath expr="//meta[@name='msapplication-TileImage']" position="replace">
-            <t t-if="icon">
-                <meta name="msapplication-TileImage" t-att-content="icon"/>
-            </t>
-        </xpath>""",
-        )
+        return True
 
     @api.model
     def _create_view(self, name, inherit_id, arch, noupdate=False, view_type="qweb"):
