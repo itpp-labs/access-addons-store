@@ -14,5 +14,5 @@
     "data": ["views.xml"],
     "demo": ["demo.xml"],
     "auto_install": True,
-    "installable": True,
+    "installable": False,
 }
