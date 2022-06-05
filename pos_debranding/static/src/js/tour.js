@@ -46,5 +46,5 @@ odoo.define("pos_debranding.tour", function (require) {
         },
     ];
 
-    tour.register("pos_debranding_tour", {test: true, url: "/web"}, steps);
+    tour.register("pos_debranding_tour", { test: true, url: "/web" }, steps);
 });
