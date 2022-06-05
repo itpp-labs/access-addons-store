@@ -2,7 +2,7 @@
 # License MIT (https://opensource.org/licenses/MIT).
 {
     "name": "POS debranding",
-    "version": "14.0.1.0.0",
+    "version": "15.0.1.0.0",
     "author": "IT-Projects LLC, Ivan Yelizariev",
     "license": "Other OSI approved licence",  # MIT
     "category": "Debranding",
