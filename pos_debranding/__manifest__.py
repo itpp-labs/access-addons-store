@@ -9,7 +9,11 @@
     "support": "help@itpp.dev",
     "website": "https://odoo-debranding.com",
     "depends": ["point_of_sale"],
-    "data": ["template.xml"],
-    "qweb": ["static/src/xml/pos_debranding.xml"],
+    "assets": {
+        "web.assets_backend": ["pos_debranding/static/src/js/tour.js"],
+        "web.assets_qweb": [
+            "pos_debranding/static/src/xml/pos_debranding.xml",
+        ],
+    },
     "installable": True,
 }
