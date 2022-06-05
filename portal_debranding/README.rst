@@ -12,6 +12,6 @@ Removes references to odoo.com:
 Further information
 ===================
 
-Odoo Apps Store: https://www.odoo.com/apps/modules/14.0/portal_debranding/
+Odoo Apps Store: https://www.odoo.com/apps/modules/15.0/portal_debranding/
 
-Tested on `Odoo 14.0 <https://github.com/odoo/odoo/commit/6916981f56783de7008cd04d4e37e80166150ff7>`_
+Tested on `Odoo 15.0 <https://github.com/odoo/odoo/commit/39c1288575a49a41cc7a1c65af153894fb503e62>`_
