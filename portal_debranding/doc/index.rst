@@ -16,4 +16,4 @@ Navigate to portal and open one of the following types of record:
 * Sale
 * Invoice
 
-RESULT: not "Powered by Odoo" label in the sidebar
+RESULT: no "Powered by Odoo" label in the sidebar
