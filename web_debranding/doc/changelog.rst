@@ -1,3 +1,9 @@
+`2.0.1`
+--------
+
+- **Fix:** delete obsolete code related to dropped feature about bot's avatar. That code caused an error on clicking chat icon
+- **Fix:** error on using custom selection field
+
 `2.0.0`
 --------
 
