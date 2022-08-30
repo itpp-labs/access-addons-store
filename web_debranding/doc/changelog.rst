@@ -1,3 +1,8 @@
+`2.0.1`
+--------
+
+- **Fix:** delete obsolete code related to dropped feature about bot's avatar. That code caused an error on clicking chat icon
+
 `2.0.0`
 --------
 
