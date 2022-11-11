@@ -62,11 +62,9 @@ Examples
 
     e.g. www.odoo.com
 
-* Open menu ``[[ Settings ]] >> General Settings``.
+* Install `website_twitter` module and open menu ``[[ Settings ]] >> General Settings >> Website``.
 
-    Use external pads in **Odoo** Notes.
-
-    Extract and analyze **Odoo** data from Google Spreadsheet.
+  Name: **Odoo** Twitter Integration
 
 * Open menu ``[[ Discuss ]] >> CHANNELS >> #general``
 

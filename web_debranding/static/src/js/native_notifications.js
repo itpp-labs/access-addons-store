@@ -6,18 +6,14 @@
 
 import "@web_debranding/js/base";
 import { _t } from "web.core";
-import { patch } from "web.utils";
+import { registerPatch } from "@mail/model/model_core";
 import { session } from "@web/session";
 
 const web_session = session;
-const components = {
-    BusService: require("bus.BusService"),
-};
 
-patch(
-    components.BusService.prototype,
-    "web_debranding/static/src/js/native_notifications.js",
-    {
+registerPatch({
+    name: "UserNotificationManager",
+    recordMethods: {
         sendNotification(options, callback) {
             if (
                 options.title === _t("Yay, push notifications are enabled!") ||
@@ -53,5 +49,5 @@ patch(
                 }
             };
         },
-    }
-);
+    },
+});

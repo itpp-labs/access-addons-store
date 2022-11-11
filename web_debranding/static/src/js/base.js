@@ -1,14 +1,15 @@
 /** @odoo-module **/
-/*  Copyright 2015-2018,2022 Ivan Yelizariev <https://it-projects.info/team/yelizariev>
+/*  Copyright 2015-2018,2022 Ivan Yelizariev <https://twitter.com/yelizariev>
     Copyright 2017 ArtyomLosev <https://github.com/ArtyomLosev>
     Copyright 2022 IT-Projects <https://it-projects.info/>
     License MIT (https://opensource.org/licenses/MIT). */
 
-import { WebClient } from "@web/webclient/webclient";
+import { debrandTranslation } from "@web_debranding/js/translation";
 import { patch } from "web.utils";
-const { onMounted } = owl.hooks;
 import { useService } from "@web/core/utils/hooks";
+import { WebClient } from "@web/webclient/webclient";
 
+const { onMounted } = owl;
 const components = { WebClient };
 
 patch(components.WebClient.prototype, "web_debranding/static/src/js/base.js", {
@@ -32,5 +33,6 @@ patch(components.WebClient.prototype, "web_debranding/static/src/js/base.js", {
         odoo.debranding_new_website = result["web_debranding.new_website"];
         odoo.debranding_new_title = result["web_debranding.new_title"];
         this.title.setParts({ zopenerp: odoo.debranding_new_title });
+        debrandTranslation();
     },
 });

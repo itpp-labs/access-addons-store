@@ -29,3 +29,8 @@ class Base(models.AbstractModel):
         if self._name == "payment.acquirer":
             res = res.filtered(lambda a: not a.module_to_buy)
         return res
+
+    def get_view(self, view_id=None, view_type="form", **options):
+        res = super().get_view(view_id=view_id, view_type=view_type, **options)
+        res["arch"] = debrand(self.env, res["arch"], is_code=True)
+        return res
