@@ -5,7 +5,7 @@
     License MIT (https://opensource.org/licenses/MIT).
     License OPL-1 (https://www.odoo.com/documentation/user/14.0/legal/licenses/licenses.html#odoo-apps) for derivative work. */
 odoo.define("web_debranding.field_upgrade", function (require) {
-    "use strict";
+
 
     var FormRenderer = require("web.FormRenderer");
 
