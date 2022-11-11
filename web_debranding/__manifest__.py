@@ -43,6 +43,7 @@
             "web_debranding/static/src/js/field_upgrade.js",
             "web_debranding/static/src/js/native_notifications.js",
             "web_debranding/static/src/js/user_menu_items.js",
+            "web_debranding/static/src/js/translation.js",
         ],
     },
     "post_load": "post_load",

@@ -2,6 +2,7 @@
 
 from . import models
 from . import controllers
+from . import translate
 
 from odoo import SUPERUSER_ID, api
 

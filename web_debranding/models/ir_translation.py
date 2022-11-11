@@ -1,4 +1,4 @@
-# Copyright 2015-2018,2020,2022 Ivan Yelizariev <https://it-projects.info/team/yelizariev>
+# Copyright 2015-2018,2020,2022 Ivan Yelizariev <https://twitter.com/yelizariev>
 # Copyright 2016 Stanislav Krotov <https://it-projects.info/team/ufaks>
 # Copyright 2017 Ilmir Karamov <https://it-projects.info/team/ilmir-k>
 # Copyright 2017 Nicolas JEUDY <https://github.com/njeudy>
@@ -12,9 +12,7 @@ import re
 
 from odoo import api, models, tools
 
-from odoo.addons.base.models.ir_translation import (
-    IrTranslation as IrTranslationOriginal,
-)
+from odoo.addons.base.models.ir_model import IrModelFields as IrModelFieldsOriginal
 
 from .ir_config_parameter import get_debranding_parameters_env
 
@@ -70,8 +68,8 @@ def debrand_bytes(env, source):
     return bytes(debrand(env, source), "utf-8")
 
 
-class IrTranslation(models.Model):
-    _inherit = "ir.translation"
+class IrModelFields(models.Model):
+    _inherit = "ir.model.fields"
 
     @api.model
     def _debrand_dict(self, res):
@@ -83,21 +81,16 @@ class IrTranslation(models.Model):
     def _debrand(self, source):
         return debrand(self.env, source)
 
-    @tools.ormcache("name", "types", "lang", "source", "res_id")
-    def __get_source(self, name, types, lang, source, res_id):
-        res = super(IrTranslation, self).__get_source(name, types, lang, source, res_id)
-        return self._debrand(res)
-
     @api.model
     @tools.ormcache_context("model_name", keys=("lang",))
     def get_field_string(self, model_name):
-        res = super(IrTranslation, self).get_field_string(model_name)
+        res = super(IrModelFields, self).get_field_string(model_name)
         return self._debrand_dict(res)
 
     @api.model
     @tools.ormcache_context("model_name", keys=("lang",))
     def get_field_help(self, model_name):
-        res = super(IrTranslation, self).get_field_help(model_name)
+        res = super(IrModelFields, self).get_field_help(model_name)
         return self._debrand_dict(res)
 
     @api.model
@@ -109,24 +102,11 @@ class IrTranslation(models.Model):
         self.clear_caches()
 
     @api.model
-    def get_translations_for_webclient(self, *args, **kwargs):
-        translations_per_module, lang_params = super(
-            IrTranslation, self
-        ).get_translations_for_webclient(*args, **kwargs)
-
-        for _module_key, module_vals in translations_per_module.items():
-            for message in module_vals["messages"]:
-                message["id"] = debrand(self.env, message["id"])
-                message["string"] = debrand(self.env, message["string"])
-
-        return translations_per_module, lang_params
-
-    @api.model
     @tools.ormcache_context("model_name", "field_name", keys=("lang",))
     def get_field_selection(self, model_name, field_name):
         # call undecorated super method. See odoo/tools/cache.py::ormcache and http://decorator.readthedocs.io/en/stable/tests.documentation.html#getting-the-source-code
 
-        selection = IrTranslationOriginal.get_field_selection.__wrapped__(
+        selection = IrModelFieldsOriginal.get_field_selection.__wrapped__(
             self, model_name, field_name
         )
         return [(value, debrand(self.env, name)) for value, name in selection]
