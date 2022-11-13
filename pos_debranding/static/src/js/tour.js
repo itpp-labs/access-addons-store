@@ -1,6 +1,4 @@
 odoo.define("pos_debranding.tour", function (require) {
-
-
     var tour = require("web_tour.tour");
 
     var steps = [
@@ -24,7 +22,7 @@ odoo.define("pos_debranding.tour", function (require) {
             position: "bottom",
         },
         {
-            trigger: ".pos:has(.loader:hidden)",
+            trigger: ".pos-content",
             content: "waiting for loading to finish",
             timeout: 20000,
             run: function () {
@@ -33,12 +31,12 @@ odoo.define("pos_debranding.tour", function (require) {
         },
         {
             content: "Switch to table or make dummy action",
-            trigger:
-                ".table:not(.oe_invisible .neworder-button), .order-button.selected",
+            trigger: ".table:not(.oe_invisible .neworder-button), .pos-logo",
             position: "bottom",
         },
         {
-            trigger: ".pos-branding:not(:has(>.pos-logo))",
+            trigger:
+                ".pos-branding:not(:has(>.pos-logo[src='/point_of_sale/static/src/img/logo.png']))",
             content: "Check logo",
             run: function () {
                 // It's a check
