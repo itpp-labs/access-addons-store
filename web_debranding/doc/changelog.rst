@@ -1,3 +1,8 @@
+`1.1.2`
+--------
+
+- **Fix:** fix `search_count` method for `payment.acquirer`
+
 `1.1.1`
 --------
 
