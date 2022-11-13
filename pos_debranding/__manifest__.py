@@ -1,4 +1,4 @@
-# Copyright 2015-2018,2020 Ivan Yelizariev
+# Copyright 2015-2018,2020,2022 Ivan Yelizariev <https://twitter.com/yelizariev>
 # License MIT (https://opensource.org/licenses/MIT).
 {
     "name": "POS debranding",
@@ -11,7 +11,7 @@
     "depends": ["point_of_sale"],
     "assets": {
         "web.assets_backend": ["pos_debranding/static/src/js/tour.js"],
-        "web.assets_qweb": [
+        "point_of_sale.assets": [
             "pos_debranding/static/src/xml/pos_debranding.xml",
         ],
     },
