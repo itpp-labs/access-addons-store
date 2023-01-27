@@ -1,3 +1,9 @@
+`2.0.2`
+--------
+
+- **Fix:** fix error 'NoneType' object has no attribute 'cr'. It happens under following conditions: website module is installed and `--db-filter` is not set.
+
+
 `2.0.1`
 --------
 
