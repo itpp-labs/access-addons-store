@@ -1,4 +1,4 @@
-# Copyright 2022 Ivan Yelizariev <https://twitter.com/yelizariev>
+# Copyright 2022-2023 Ivan Yelizariev <https://twitter.com/yelizariev>
 # License OPL-1 (https://www.odoo.com/documentation/user/14.0/legal/licenses/licenses.html#odoo-apps)
 import inspect
 import logging
@@ -18,7 +18,10 @@ def _get_translation(self, source, module=None):
     source = _get_translation_original(source, module)
 
     frame = inspect.currentframe().f_back.f_back
-    (cr, dummy) = _._get_cr(frame, allow_create=False)
+    try:
+        (cr, dummy) = _._get_cr(frame, allow_create=False)
+    except AttributeError:
+        return source
     try:
         uid = self._get_uid(frame)
     except Exception:
