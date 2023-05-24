@@ -1,3 +1,8 @@
+`3.0.0`
+--------
+
+- **Fix:** module installation was crashed because of `recent update in Odoo v16 <https://github.com/odoo/odoo/pull/116368>`__
+
 `2.0.2`
 --------
 

@@ -43,6 +43,7 @@ Roadmap
 =======
 
 * TODO: replace hardcoded placeholders and make them based on `web_debranding.new_website`
+* TODO: support debranding in `--dev=xml` mode
 
 Questions?
 ==========
