@@ -9,7 +9,7 @@
 # License OPL-1 (https://www.odoo.com/documentation/user/14.0/legal/licenses/licenses.html#odoo-apps) for derivative work.
 {
     "name": "Backend debranding",
-    "version": "16.0.2.0.2",
+    "version": "16.0.3.0.0",
     "author": "IT-Projects LLC, Ivan Yelizariev",
     "license": "OPL-1",
     "category": "Debranding",
@@ -46,9 +46,7 @@
             "web_debranding/static/src/js/translation.js",
         ],
     },
-    "post_load": "post_load",
     "auto_install": False,
     "uninstall_hook": "uninstall_hook",
     "installable": True,
-    "saas_demo_title": "Backend debranding demo",
 }
