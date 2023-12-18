@@ -33,9 +33,6 @@
         "views/res_config.xml",
     ],
     "assets": {
-        "web.assets_qweb": [
-            "web_debranding/static/src/xml/web.xml",
-        ],
         "web.assets_backend": [
             "web_debranding/static/src/css/web.css",
             "web_debranding/static/src/js/base.js",
@@ -44,6 +41,7 @@
             "web_debranding/static/src/js/native_notifications.js",
             "web_debranding/static/src/js/user_menu_items.js",
             "web_debranding/static/src/js/translation.js",
+            "web_debranding/static/src/xml/web.xml",
         ],
     },
     "auto_install": False,

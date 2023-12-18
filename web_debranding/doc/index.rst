@@ -73,3 +73,7 @@ Examples
 * Open two browser tabs with Odoo. Then logout in one of it. Open any menu in another one.
 
     Your **Odoo** session expired. The current page is about to be refreshed.
+
+* Install `sale_management` module and open menu ``[[ Settings ]] >> Sales``.
+
+  * RESULT: the Enterprise features are hidden

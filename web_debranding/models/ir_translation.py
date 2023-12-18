@@ -99,7 +99,7 @@ class IrModelFields(models.Model):
         we wrapped it in the api.model decorator
 
         """
-        self.clear_caches()
+        self.env.registry.clear_cache()
 
     @api.model
     @tools.ormcache_context("model_name", "field_name", keys=("lang",))

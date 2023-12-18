@@ -1,5 +1,5 @@
 /** @odoo-module **/
-/*  Copyright 2022 Ivan Yelizariev <https://twitter.com/yelizariev>
+/*  Copyright 2022-2023 Ivan Yelizariev <https://twitter.com/yelizariev>
     License OPL-1 (https://www.odoo.com/documentation/user/14.0/legal/licenses/licenses.html#odoo-apps). */
 
 import { localizationService } from "@web/core/l10n/localization_service";
@@ -14,7 +14,7 @@ export const debrandTranslation = () => {
     if (!odoo.debranding_new_name) {
         return;
     }
-    _.each(odoo_terms, (term) => {
+    odoo_terms.forEach((term) => {
         if (!translatedTerms[term]) {
             translatedTerms[term] = term;
         }
@@ -24,6 +24,7 @@ export const debrandTranslation = () => {
 
 const start = localizationService.start;
 localizationService.start = async (env, { user }) => {
-    await start(env, { user });
+    const localization = await start(env, { user });
     debrandTranslation();
+    return localization;
 };

@@ -1,5 +1,5 @@
 /** @odoo-module **/
-/* Copyright 2015-2018,2021 Ivan Yelizariev <https://twitter.com/yelizariev>
+/* Copyright 2015-2018,2021,2023 Ivan Yelizariev <https://twitter.com/yelizariev>
    Copyright 2015 igallyamov <https://github.com/igallyamov>
    Copyright 2017 Gabbasov Dinar <https://it-projects.info/team/GabbasovDinar>
    Copyright 2022 IT-Projects <https://it-projects.info/>
@@ -7,11 +7,11 @@
 
 import "@web_debranding/js/base";
 import { Dialog } from "@web/core/dialog/dialog";
-import { patch } from "web.utils";
+import { patch } from "@web/core/utils/patch";
 
 const component = { Dialog };
 
-patch(component.Dialog.prototype, "web_debranding/static/src/js/dialog.js", {
+patch(component.Dialog.prototype, {
     setup() {
         const debranding_new_name = odoo.debranding_new_name;
         // // const debranding_new_website = odoo.debranding_new_website;
@@ -37,6 +37,6 @@ patch(component.Dialog.prototype, "web_debranding/static/src/js/dialog.js", {
             content_html = content_html.replace(/Odoo/gi, debranding_new_name);
             options.$content.html(content_html);
         }*/
-        this._super();
+        super.setup();
     },
 });
