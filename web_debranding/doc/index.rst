@@ -20,19 +20,19 @@ By default the module replaces ``Odoo`` to ``Software``.
   * ``web_debranding.new_website`` (your website)
   * ``web_debranding.new_documentation_website`` (website with documentation instead of official one)
   * ``web_debranding.favicon_url``
-  * ``web_debranding.send_publisher_warranty_url`` - set 0 to disable server requests to odoo.com and 1 otherwise (useful for enterprise contractors). Works only for non-enterprise versions of odoo, check `note <https://www.odoo.com/apps/modules/15.0/web_debranding/#enterprise-users-notice>`__ below.
+  * ``web_debranding.send_publisher_warranty_url`` - set 0 to disable server requests to odoo.com and 1 otherwise (useful for enterprise contractors). Works only for non-enterprise versions of odoo, check `note <https://www.odoo.com/apps/modules/17.0/web_debranding/#enterprise-users-notice>`__ below.
 
 Further debranding
 ==================
 
-* Install `portal_debranding <https://apps.odoo.com/apps/modules/15.0/portal_debranding/>`__ if module *Portal* is already installed in your system
-.. * Install `website_debranding <https://apps.odoo.com/apps/modules/15.0/website_debranding/>`__ if module *Website Builder* is already installed in your system
-* Install `pos_debranding <https://apps.odoo.com/apps/modules/15.0/pos_debranding/>`__ if module *POS* is already installed in your system
+* Install `portal_debranding <https://apps.odoo.com/apps/modules/17.0/portal_debranding/>`__ if module *Portal* is already installed in your system
+* Install `website_debranding <https://apps.odoo.com/apps/modules/17.0/website_debranding/>`__ if module *Website Builder* is already installed in your system
+* Install `pos_debranding <https://apps.odoo.com/apps/modules/17.0/pos_debranding/>`__ if module *POS* is already installed in your system
 * Delete *Odoo.com Accounts* record at *Settings >> Users & Companies >> OAuth Providers* if module ``OAuth2 Authentication`` has been already installed in your system
 * Database switcher ``/web/database/manager``: edit *addons/web/static/src/public/database_manager.qweb.html* file
 * Favicon: open ``[[ Settings ]] >> Users & Companies >> Companies`` and change **Company Favicon**
 * Bot's Avatar: open Users menu, apply filter *Inactive Users*, change avatar of the bot to a custom one
-* Emails: use OCA's `Mail Debrand <https://apps.odoo.com/apps/modules/15.0/mail_debrand/>`__ module
+* Emails: use OCA's `Mail Debrand <https://apps.odoo.com/apps/modules/17.0/mail_debrand/>`__ module
 
 Auto-debrand new databases
 ==========================
