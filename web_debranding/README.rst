@@ -58,8 +58,8 @@ Contributors
 Further information
 ===================
 
-Odoo Apps Store: https://www.odoo.com/apps/modules/15.0/web_debranding/
+Odoo Apps Store: https://www.odoo.com/apps/modules/17.0/web_debranding/
 
 Notifications on updates: `via Atom <https://github.com/itpp-labs/misc-addons/commits/14.0/web_debranding.atom>`_, `by Email <https://blogtrottr.com/?subscribe=https://github.com/itpp-labs/misc-addons/commits/14.0/web_debranding.atom>`_
 
-Tested on `Odoo 15.0 <https://github.com/odoo/odoo/commit/8dbc14f16bfb92cedbb69df491f53ea72b860275>`_
+Tested on `Odoo 17.0 <https://github.com/odoo/odoo/commit/40b19d89846303016098840f4958fe7cc105067c>`_
