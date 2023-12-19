@@ -18,10 +18,10 @@ Roadmap
 Further information
 ===================
 
-HTML Description: https://apps.odoo.com/apps/modules/16.0/pos_debranding
+HTML Description: https://apps.odoo.com/apps/modules/17.0/pos_debranding
 
 Usage instructions: `<doc/index.rst>`_
 
 Changelog: `<doc/changelog.rst>`_
 
-Tested on `Odoo 16.0 <https://github.com/odoo/odoo/commit/9917d841fa38ccc1e6d67875a665494dc22ef92f>`_
+Tested on `Odoo 17.0 <https://github.com/odoo/odoo/commit/40b19d89846303016098840f4958fe7cc105067c>`_

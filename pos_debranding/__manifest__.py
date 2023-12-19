@@ -1,4 +1,4 @@
-# Copyright 2015-2018,2020,2022 Ivan Yelizariev <https://twitter.com/yelizariev>
+# Copyright 2015-2018,2020,2022-2023 Ivan Yelizariev <https://twitter.com/yelizariev>
 # License MIT (https://opensource.org/licenses/MIT).
 {
     "name": "POS debranding",
@@ -10,10 +10,15 @@
     "website": "https://odoo-debranding.com",
     "depends": ["point_of_sale"],
     "assets": {
-        "web.assets_backend": ["pos_debranding/static/src/js/tour.js"],
-        "point_of_sale.assets": [
+        "point_of_sale.assets_prod": [
             "pos_debranding/static/src/xml/pos_debranding.xml",
         ],
+        "web.assets_tests": [
+            "pos_debranding/static/src/js/tour.js",
+        ],
     },
+    "data": [
+        "views/pos.xml",
+    ],
     "installable": True,
 }

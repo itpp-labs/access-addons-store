@@ -1,9 +1,15 @@
-odoo.define("pos_debranding.tour", function (require) {
-    var tour = require("web_tour.tour");
+/** @odoo-module **/
+// Copyright 2015-2018,2020,2022-2023 Ivan Yelizariev <https://twitter.com/yelizariev>
+// License OPL-1 (https://www.odoo.com/documentation/17.0/legal/licenses.html#odoo-apps)
+import { registry } from "@web/core/registry";
+import { stepUtils } from "@web_tour/tour_service/tour_utils";
 
-    var steps = [
-        tour.stepUtils.showAppsMenuItem(),
+registry.category("web_tour.tours").add("pos_debranding.tour", {
+    url: "/web",
+    steps: () => [
+        stepUtils.showAppsMenuItem(),
         {
+            test: true,
             trigger: '.o_app[data-menu-xmlid="point_of_sale.menu_point_root"]',
             content: "Ready to launch your <b>point of sale</b>? <i>Click here</i>.",
             position: "right",
@@ -42,7 +48,5 @@ odoo.define("pos_debranding.tour", function (require) {
                 // It's a check
             },
         },
-    ];
-
-    tour.register("pos_debranding_tour", { test: true, url: "/web" }, steps);
+    ],
 });

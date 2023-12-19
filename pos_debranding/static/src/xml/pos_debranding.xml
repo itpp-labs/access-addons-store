@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2023 Ivan Yelizariev <https://twitter.com/yelizariev>
+     License OPL-1 (https://www.odoo.com/documentation/17.0/legal/licenses.html#odoo-apps). -->
 <templates id="template" xml:space="preserve">
     <t
         t-name="Chrome"
-        t-inherit="point_of_sale.Chrome"
+        t-inherit="point_of_sale.Navbar"
         t-inherit-mode="extension"
         owl="1"
     >

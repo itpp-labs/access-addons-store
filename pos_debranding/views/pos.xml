@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2023 Ivan Yelizariev <https://twitter.com/yelizariev>
+     License OPL-1 (https://www.odoo.com/documentation/17.0/legal/licenses.html#odoo-apps). -->
+<odoo>
+    <template id="pos_debranding" inherit_id="point_of_sale.index">
+        <xpath expr="//title" position="replace">
+            <title>POS</title>
+        </xpath>
+    </template>
+</odoo>
