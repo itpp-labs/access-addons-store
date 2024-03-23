@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+    <div t-name="relax.template" class="relax_container o_home_menu_background" owl="1">
+        <iframe t-att-src="relax_url" />
+    </div>
+</templates>
