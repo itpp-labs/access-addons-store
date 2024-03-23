@@ -2,4 +2,4 @@
 
 Step into the future with 3D rooms inside Odoo!
 
-Demo: TODO
+Demo: https://thepiratecircus.com/relax.webm
