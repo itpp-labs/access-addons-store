@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--Copyright 2024 Ivan Yelizariev <https://twitter.com/yelizariev>
+    License OPL-1 (https://www.odoo.com/documentation/user/16.0/legal/licenses/licenses.html#odoo-apps) for derivative work.-->
+<odoo>
+    <!-- Main menu -->
+    <record id="relax_action_main_menu" model="ir.actions.client">
+        <field name="name">Relaxation Room</field>
+        <field name="tag">relax</field>
+        <field name="target">fullscreen</field>
+    </record>
+    <menuitem
+        id="relax_main_menu"
+        action="relax_action_main_menu"
+        web_icon="relax,static/description/icon.jpg"
+        sequence="1024"
+    />
+</odoo>
