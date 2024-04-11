@@ -4,6 +4,6 @@
         License OPL-1 (https://www.odoo.com/documentation/user/16.0/legal/licenses/licenses.html#odoo-apps) for derivative work.-->
     <record id="relax_url" model="ir.config_parameter">
         <field name="key">relax.url</field>
-        <field name="value">https://gist.lamourism.com/</field>
+        <field name="value">https://gist.lamourism.com/?debug=🇫🇷</field>
     </record>
 </odoo>
