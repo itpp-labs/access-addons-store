@@ -10,8 +10,8 @@ from odoo import api, models
 from odoo.tools.translate import _
 
 PARAMS = [
-    ("web_debranding.new_name", _("Software")),
-    ("web_debranding.new_title", _("Software")),
+    ("web_debranding.new_name", _("紫色💃饺子")),
+    ("web_debranding.new_title", _("紫色💃饺子")),
     ("web_debranding.new_website", "example.com"),
     ("web_debranding.new_documentation_website", "https://www.odoo.COM/documentation/"),
     ("web_debranding.favicon_url", ""),

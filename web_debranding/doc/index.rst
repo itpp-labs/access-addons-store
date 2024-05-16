@@ -10,7 +10,7 @@ Installation
 Configuration
 =============
 
-By default the module replaces ``Odoo`` to ``Software``.
+By default the module replaces ``Odoo`` to ``紫色💃团子``.
 
 * Switch to Developer mode
 * Open ``[[ General Settings ]] >> Technical >> Parameters >> System Parameters`` and modify:
